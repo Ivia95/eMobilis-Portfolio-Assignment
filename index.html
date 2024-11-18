@@ -5,59 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="navbar">
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="public/contact.html">Contact Me</a></li>
+<body class="bg-gray-100 text-gray-900">
+<!-- Navbar -->
+<div class="navbar bg-gray-900 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <div class="text-lg font-semibold text-white">My Portfolio</div>
+        <ul class="flex space-x-4">
+            <li><a href="#about-me" class="hover:text-blue-500 text-white transition-colors">About Me</a></li>
+            <li><a href="public/contact.html" class="hover:text-blue-500 text-white transition-colors">Contact Me</a></li>
         </ul>
     </nav>
 </div>
-<div class="container">
-    <header class="header">
-        <img src="assets/IMG_3739.JPG" alt="Your Image or Video" width="250" height="150">
+
+<!-- Container -->
+<div class="container mx-auto my-8 bg-[#f5f5dc] shadow-md rounded-lg p-6">
+    <!-- Header -->
+    <header class="header text-center mb-6">
+        <img src="assets/IMG_3739.JPG" alt="Your Image or Video" class="mx-auto w-64 h-64 object-cover rounded-md">
     </header>
-    <section class="tagline">
-        <h1>Welcome To My Portfolio</h1>
+    <!-- Tagline -->
+    <section class="tagline text-center mb-6">
+        <h1 class="text-2xl font-bold">Welcome To My Portfolio</h1>
     </section>
-    <div id="about-me" class="skills-hobbies">
+    <!-- Skills and Hobbies -->
+    <div id="about-me" class="skills-hobbies grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-200 p-6 rounded-lg">
         <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Computer Programming</li>
-                <li>Software Development</li>
-                <li>System Development</li>
-                <li>Web Development</li>
-                <li>System Auditing</li>
+            <h2 class="text-xl font-semibold mb-4">Skills</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Computer Programming</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Software Development</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">System Development</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Web Development</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">System Auditing</li>
             </ul>
         </div>
         <div class="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Travelling</li>
-                <li>Gaming</li>
-                <li>Golfing</li>
-                <li>Hiking</li>
+            <h2 class="text-xl font-semibold mb-4">Hobbies</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Travelling</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Gaming</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Golfing</li>
+                <li class="bg-blue-500 text-white p-2 mb-2 rounded-lg hover:bg-blue-700 transition-all">Hiking</li>
             </ul>
         </div>
     </div>
-    <div class="footer">
-        <footer class="footer">
-            <a href="https://www.facebook.com/andrew.ivia">Facebook</a>
-            <a href="https://x.com/Ivia_95">Twitter</a>
-            <a href="https://wa.me/0745496919">Whatsapp</a>
-            <a href="https://www.linkedin.com/in/andrew-ivia-405796248/">LinkedIn</a>
-            <a href="https://www.instagram.com/ivia_95/">Instagram</a>
-            <a href="https://github.com/Ivia95">GitHub</a>
-        </footer>
-    </div>
 </div>
+
+<!-- Footer -->
+<footer class="footer bg-gray-900 shadow-md mt-8 py-4 text-center">
+    <div class="container mx-auto">
+        <div class="flex justify-center space-x-4">
+            <a href="https://www.facebook.com/andrew.ivia" class="hover:text-blue-500 text-white transition-colors">Facebook</a>
+            <a href="https://x.com/Ivia_95" class="hover:text-blue-500 text-white transition-colors">Twitter</a>
+            <a href="https://wa.me/0745496919" class="hover:text-blue-500 text-white transition-colors">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/andrew-ivia-405796248/" class="hover:text-blue-500 text-white transition-colors">LinkedIn</a>
+            <a href="https://www.instagram.com/ivia_95/" class="hover:text-blue-500 text-white transition-colors">Instagram</a>
+            <a href="https://github.com/Ivia95" class="hover:text-blue-500 text-white transition-colors">GitHub</a>
+        </div>
+        <div class="mt-4 text-sm text-gray-400">© 2024 Andrew Ivia My Portfolio. All rights reserved.</div>
+    </div>
+</footer>
+
+<!-- Bootstrap and Tailwind Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

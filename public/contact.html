@@ -5,43 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="navbar">
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#contact-form">Contact Me</a></li>
+<body class="bg-gray-100 text-gray-900">
+<!-- Navbar -->
+<div class="navbar bg-gray-900 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <div class="text-lg font-semibold text-white">My Portfolio</div>
+        <ul class="flex space-x-4">
+            <li><a href="../index.html" class="hover:text-blue-500 text-white transition-colors">Home</a></li>
+            <li><a href="#contact-form" class="hover:text-blue-500 text-white transition-colors">Contact Me</a></li>
         </ul>
     </nav>
 </div>
-<section id="contact-form" class="contact-form">
-    <h2>Contact Me</h2>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="andrew@gmail.com" required>
+<!-- Contact Form Section -->
+<section id="contact-form" class="contact-form container mx-auto my-8 bg-gray-200 shadow-md rounded-lg p-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Contact Me</h2>
+    <form action="#" method="post" class="grid grid-cols-1 gap-4">
+        <label for="name" class="block font-medium">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required class="border-gray-300 rounded-md">
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="0745496919" required>
+        <label for="email" class="block font-medium">Email:</label>
+        <input type="email" id="email" name="email" placeholder="andrew@gmail.com" required class="border-gray-300 rounded-md">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <label for="phone" class="block font-medium">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0745496919" required class="border-gray-300 rounded-md">
 
-        <button type="button" class="btn btn-outline-primary">Submit</button>
+        <label for="message" class="block font-medium">Message:</label>
+        <textarea id="message" name="message" required class="border-gray-300 rounded-md"></textarea>
+
+        <button type="button" class="btn btn-outline-primary mt-4">Submit</button>
     </form>
-    <div class="footer">
-        <footer class="footer">
-            <a href="https://www.facebook.com/andrew.ivia">Facebook</a>
-            <a href="https://x.com/Ivia_95">Twitter</a>
-            <a href="https://wa.me/0745496919" target="_blank">Whatsapp</a>
-            <a href="https://www.linkedin.com/in/andrew-ivia-405796248/">LinkedIn</a>
-            <a href="https://www.instagram.com/ivia_95/">Instagram</a>
-            <a href="https://github.com/Ivia95" target="_blank">GitHub</a>
-        </footer>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-gray-900 shadow-md mt-8 py-4 text-center">
+    <div class="container mx-auto">
+        <div class="flex justify-center space-x-4">
+            <a href="https://www.facebook.com/andrew.ivia" class="hover:text-blue-500 text-white transition-colors">Facebook</a>
+            <a href="https://x.com/Ivia_95" class="hover:text-blue-500 text-white transition-colors">Twitter</a>
+            <a href="https://wa.me/0745496919" target="_blank" class="hover:text-blue-500 text-white transition-colors">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/andrew-ivia-405796248/" class="hover:text-blue-500 text-white transition-colors">LinkedIn</a>
+            <a href="https://www.instagram.com/ivia_95/" class="hover:text-blue-500 text-white transition-colors">Instagram</a>
+            <a href="https://github.com/Ivia95" target="_blank" class="hover:text-blue-500 text-white transition-colors">GitHub</a>
+        </div>
+        <div class="mt-4 text-sm text-gray-400">© 2024 Andrew Ivia My Portfolio. All rights reserved.</div>
     </div>
+</footer>
+
+<!-- Bootstrap and Tailwind Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
